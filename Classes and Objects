@@ -1,0 +1,49 @@
+Cars.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace New.net_project
+{
+    class cars
+    {
+        public string Brand;
+        public string Model;
+        public int Bhp;
+    }
+
+}
+
+program.cs
+
+using System;
+using System.Text;
+using System.Threading.Tasks;
+namespace New.net_project
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            cars Cars1 = new cars();
+            Cars1.Brand = "Porsche";
+            Cars1.Model = "Cayenne";
+            Cars1.Bhp = 358;
+
+            cars Cars2 = new cars();
+            Cars2.Brand = "BMW";
+            Cars2.Model = "x5";
+            Cars2.Bhp = 239;
+
+            Console.WriteLine(Cars2.Brand);
+            Console.WriteLine(Cars2.Model);
+            Console.WriteLine(Cars1.Bhp);
+
+
+            
+        }
+    }
+}
